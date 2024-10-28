@@ -1,5 +1,8 @@
 html {
-  background-color: aqua;
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 body {
@@ -18,13 +21,13 @@ h1 {
 }
 
 h4 {
-  text-align: right;
+  text-align: center;
   font-style: italic;
 }
 
 h3 {
   a {
-    color: white;
+    color: red;
     text-decoration-thickness: 1px;
   }
 }
@@ -38,14 +41,7 @@ h3 {
   text-align: right;
 }
 
-#oke:hover {
-  text-decoration: none;
-  color: red;
-}
-
 p a:hover {
-  color: white;
-  background-color: blue;
   font-weight: bold;
   text-decoration: none;
 }
@@ -53,4 +49,9 @@ p a:hover {
 #r {
   font-weight: bold;
   text-decoration: none;
+}
+
+h3 {
+  text-align: center;
+  font-size: larger;
 }
