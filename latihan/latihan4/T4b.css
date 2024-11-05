@@ -104,3 +104,11 @@ body {
   text-align: center;
   font-size: 12px;
 }
+
+.hero2 {
+  background-image: url(Doni\ Haryono\ Cedera.webp);
+  height: 250px;
+  background-size: cover;
+  background-position: 0 -200px;
+  margin-bottom: 20px;
+}
