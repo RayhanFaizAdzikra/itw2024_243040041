@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat" sans-serif;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -102,7 +103,20 @@ nav ul li a:hover {
     display: flex;
   }
   nav ul {
-    display: none;
-    
+    position: absolute ;
+    right: 0;
+    top: 0;
+    width: 75%;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(4, 0, 255);
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
   }
-}
+
+  nav ul.slide {
+    transform: translateX(0);
+  }
