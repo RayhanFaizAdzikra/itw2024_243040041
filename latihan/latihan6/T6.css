@@ -1,20 +1,24 @@
-* {
+*{
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Montserrat" sans-serif;
+  font-family: sans-serif;
   overflow-x: hidden;
 }
 
-/* Navbar */
 nav {
   display: flex;
-  background-color: rgb(4, 0, 255);
+  background-color:    rgb(25, 136, 228);
   justify-content: space-around;
-  padding: 20px 0;
-  color: rgb(97, 247, 247);
+  color: rgb(255, 255, 255);
+  height: 50px;
+  align-items: center
+}
+
+nav .logo {
+  font-family: ; "Saira Condensed", sans-serif;
 }
 
 nav ul {
@@ -25,23 +29,22 @@ nav ul {
 }
 
 nav ul li a {
-  color: rgb(97, 247, 247);
+  color:  rgb(249, 252, 255);
   text-decoration: none;
-  font-size: 0.8em;
+
 }
 
 nav ul li a:hover {
-  color: rgb(160, 247, 247);
+  color: rgb(252, 252, 250);
 }
 
-/*Humburger Menu*/
 .menu-toggle {
   display: none;
   flex-direction: column;
   height: 20px;
   justify-content: space-between;
-  color: black;
   position: relative;
+
 }
 
 .menu-toggle input {
@@ -49,9 +52,9 @@ nav ul li a:hover {
   width: 40px;
   height: 28px;
   left: -5px;
-  top: -5px;
+  top: -3px;
   opacity: 0;
-  cursor: pointer;
+  cursor: pointer ;
   z-index: 2;
 }
 
@@ -59,64 +62,76 @@ nav ul li a:hover {
   display: block;
   width: 28px;
   height: 3px;
-  color: rgb(97, 247, 247);
+  background-color: rgb(255, 255, 255);
   border-radius: 3px;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
-/*Hamburger Menu Animation*/
 .menu-toggle span:nth-child(2) {
   transform-origin: 0 0;
+
+}
+
+.menu-toggle span:nth-child(3) {
+  transform-origin: 0 0;
+
 }
 
 .menu-toggle span:nth-child(4) {
-  transform-origin: 0 100%;
+  transform-origin: 0 0;
 }
+
+
 
 .menu-toggle input:checked ~ span:nth-child(2) {
-  background-color: white;
-  transform: rotate(45deg) translate(-1px, -1px);
-}
-
-.menu-toggle input:checked ~ span:nth-child(4) {
-  background-color: white;
-  transform: rotate(-45deg) translate(-1px, 0);
+  background-color:rgb(253, 195, 4);
+  transform: rotate(180deg) translate(-1px, -1px);
 }
 
 .menu-toggle input:checked ~ span:nth-child(3) {
-  opacity: 0;
-  transform: scale(0);
+  background-color: rgb(255, 238, 5);
+  transform: rotate(-180deg) translate(-1px, 0);
 }
 
-/* Responsive Breakpoint*/
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: rgb(208, 255, 0);
+  transform: rotate(-180deg) translate(-1px, 0);
+}
 
-/* ukuran tablet*/
+
+
+
 @media screen and (max-width: 768px) {
   nav ul {
-    width: 50%;
+      width: 50%;
   }
+  
 }
 
-/* ukuran mobile*/
+
 @media screen and (max-width: 576px) {
   .menu-toggle {
-    display: flex;
+      display: flex;
   }
   nav ul {
-    position: absolute ;
-    right: 0;
-    top: 0;
-    width: 75%;
-    height: 100vh;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(4, 0, 255);
-    z-index: -1;
-    transform: translateX(100%);
-    transition: all 1s;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 80%;
+      height: 100vh;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      background-color:  rgb(4, 132, 236);
+      z-index: -1;
+      transform: translateX(100%);
+      transition: all 1s;
+      opacity: 0;
+  }
+  
+  nav ul.slide {
+      opacity: 1;
+      transform: translateX(0);
   }
 
-  nav ul.slide {
-    transform: translateX(0);
-  }
+}
