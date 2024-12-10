@@ -41,7 +41,7 @@ body {
   background-color: black;
   color: rgb(3, 3, 3);
   display: grid;
-  
+
   place-content: center;
   text-align: center;
   cursor: pointer;
@@ -49,11 +49,13 @@ body {
 .feature-1 {
   grid-area: feature-1;
   background-image: url(img/Metarise2.jpg);
+  background-position: center;
   background-size: cover;
 }
 .feature-2 {
   grid-area: feature-2;
   background-image: url(img/SkyEliteFF3.jpg);
+  background-position: center;
   background-size: cover;
 }
 .features .price {
