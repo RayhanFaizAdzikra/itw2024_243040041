@@ -39,7 +39,7 @@ body {
 }
 .features {
   background-color: black;
-  color: white;
+  color: rgb(3, 3, 3);
   display: grid;
   
   place-content: center;
