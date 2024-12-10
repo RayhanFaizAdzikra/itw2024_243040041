@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Gride</title>
+    <title>Hery Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="T7.css" />
@@ -14,29 +16,91 @@
     <div class="container">
       <header class="header">
         <div class="hero">
-          <h2 class="heading">Rayhan Sport Shoes</h2>
-          <p class="sub-heading">Vollyball Shoes</p>
+          <h2 class="heading">Rayhan Sport</h2>
+          <p class="sub-heading">Product</p>
         </div>
-        <div class="features feature 1">
-          <h4 class="price">IDR 650k</h4>
-          <p class="item">Sky Elite FF3 White</p>
+        <div class="features feature-1">
+          <h4 class="price">850K</h4>
+          <p class="item">Metarise2</p>
         </div>
-        <div class="features feature 2">
-          <h4 class="price">IDR 850k</h4>
-          <p class="item">Metaris2 Paris</p>
+        <div class="features feature-2">
+          <h4 class="price">650k</h4>
+          <p class="item">SkyEliteFF3</p>
         </div>
       </header>
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>Rayhan Sport</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Gallery</a></li>
+        </ul>
+      </nav>
 
-      <nav class="menu"></nav>
-      <div class="brand">
-        <h1>Rayhan Sport Shoes</h1>
-      </div>
-      <ul class="menu-list">
-        <li><a href="">Home</a></li>
-        <li><a href="">Products</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Gallery</a></li>
-      </ul>
+      <section class="Services">
+        <div class="service">
+          <div class="icon">💻</div>
+          <h3>Tutorial</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Praesentium provident error, distinctio quidem aliquid excepturi?
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">👟</div>
+          <h3>Tutorial</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Praesentium provident error, distinctio quidem aliquid excepturi?
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">🚚</div>
+          <h3>Tutorial</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Praesentium provident error, distinctio quidem aliquid excepturi?
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">💸</div>
+          <h3>Tutorial</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Praesentium provident error, distinctio quidem aliquid excepturi?
+          </p>
+        </div>
+      </section>
+      <section class="galerry">
+        <h2>Gallery</h2>
+        <img src="img/hp1.jpg" />
+        <img src="img/hp2.jpg" />
+        <img src="img/hp3.jpg" />
+        <img src="img/hp2.jpg" />
+        <img src="img/hp3.jpg" />
+        <img src="img/hp1.jpg" />
+        <img src="img/hp2.jpg" />
+        <img src="img/hp3.jpg" />
+        <img src="img/hp1.jpg" />
+        <img src="img/hp2.jpg" />
+      </section>
     </div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
   </body>
 </html>
